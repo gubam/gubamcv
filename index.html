@@ -3,23 +3,344 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gubam CV</title>
+
+  <title>Your Name | CV</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Your Name</div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <p class="subtitle">Researcher · Developer · Engineer</p>
+
+      <h1>Your Name</h1>
+
+      <p class="hero-description">
+        I am interested in robotics, artificial intelligence,
+        autonomous systems, and intelligent machines.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="mailto:your@email.com" class="button">
+          Email
+        </a>
+
+        <a href="https://github.com/gubam"
+           target="_blank"
+           class="button secondary">
+          GitHub
+        </a>
+
+        <a href="https://linkedin.com/"
+           target="_blank"
+           class="button secondary">
+          LinkedIn
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
   <main class="container">
-    <h1>Gubam</h1>
-    <p>Curriculum Vitae</p>
 
-    <h2>About</h2>
-    <p>This is my CV website.</p>
 
-    <h2>Education</h2>
-    <p>University / Degree / Year</p>
+    <!-- ABOUT -->
+    <section id="about">
 
-    <h2>Experience</h2>
-    <p>Position / Organization / Year</p>
+      <h2>About</h2>
+
+      <p>
+        Write a short introduction about yourself here.
+        Mention your research interests, current position,
+        and what kinds of problems you are interested in.
+      </p>
+
+    </section>
+
+
+
+    <!-- EDUCATION -->
+    <section id="education">
+
+      <h2>Education</h2>
+
+      <div class="item">
+
+        <div class="item-header">
+
+          <div>
+            <h3>Ph.D. in Your Major</h3>
+            <p class="institution">
+              University Name
+            </p>
+          </div>
+
+          <span class="date">
+            2024 – Present
+          </span>
+
+        </div>
+
+        <p>
+          Advisor: Professor Name
+        </p>
+
+      </div>
+
+
+      <div class="item">
+
+        <div class="item-header">
+
+          <div>
+            <h3>B.S. in Your Major</h3>
+            <p class="institution">
+              University Name
+            </p>
+          </div>
+
+          <span class="date">
+            2020 – 2024
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+
+      <h2>Experience</h2>
+
+      <div class="item">
+
+        <div class="item-header">
+
+          <div>
+            <h3>Research Assistant</h3>
+
+            <p class="institution">
+              Laboratory / University
+            </p>
+          </div>
+
+          <span class="date">
+            2024 – Present
+          </span>
+
+        </div>
+
+        <ul>
+          <li>
+            Research topic or responsibility.
+          </li>
+
+          <li>
+            Developed or implemented something.
+          </li>
+
+          <li>
+            Worked with robotics / AI / simulation.
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+      <h2>Selected Projects</h2>
+
+
+      <div class="project-grid">
+
+        <div class="project-card">
+
+          <h3>Project Name</h3>
+
+          <p>
+            Short explanation of your project.
+            Explain what you built and why it matters.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>ROS2</span>
+            <span>AI</span>
+          </div>
+
+          <a href="#">
+            View Project →
+          </a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+          <h3>Project Name</h3>
+
+          <p>
+            Short explanation of another project.
+          </p>
+
+          <div class="tags">
+            <span>C++</span>
+            <span>Robotics</span>
+          </div>
+
+          <a href="#">
+            View Project →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+
+      <h2>Publications</h2>
+
+
+      <div class="publication">
+
+        <p>
+          <strong>Your Name</strong>,
+          Author A, Author B
+        </p>
+
+        <p>
+          "Paper Title"
+        </p>
+
+        <p class="publication-info">
+          Conference / Journal Name, 2026
+        </p>
+
+      </div>
+
+
+      <div class="publication">
+
+        <p>
+          Author A,
+          <strong>Your Name</strong>
+        </p>
+
+        <p>
+          "Paper Title"
+        </p>
+
+        <p class="publication-info">
+          Conference / Journal Name, 2025
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+      <h2>Skills</h2>
+
+      <div class="skills">
+
+        <div>
+          <strong>Programming</strong>
+          <p>Python · C++ · MATLAB</p>
+        </div>
+
+        <div>
+          <strong>Robotics</strong>
+          <p>ROS2 · Gazebo · Isaac Sim</p>
+        </div>
+
+        <div>
+          <strong>Tools</strong>
+          <p>Git · Linux · Docker</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+      <h2>Contact</h2>
+
+      <p>
+        Feel free to contact me regarding research,
+        collaboration, or projects.
+      </p>
+
+      <p>
+        Email:
+        <a href="mailto:your@email.com">
+          your@email.com
+        </a>
+      </p>
+
+    </section>
+
+
   </main>
+
+
+
+  <footer>
+
+    <p>
+      © 2026 Your Name
+    </p>
+
+  </footer>
+
+
 </body>
 </html>
