@@ -1,28 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  color: #1f2937;
+  background: #ffffff;
+
+  line-height: 1.7;
 }
+
+
+/* NAV */
+
+nav {
+  position: sticky;
+  top: 0;
+
+  background: rgba(255,255,255,0.95);
+
+  border-bottom: 1px solid #e5e7eb;
+
+  backdrop-filter: blur(10px);
+
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1000px;
+
+  margin: auto;
+
+  padding: 16px 24px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+
+  color: #4b5563;
+
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+
+/* HERO */
+
+.hero {
+  padding: 120px 24px 100px;
+
+  background: #f8fafc;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.hero-content {
+  max-width: 1000px;
+
+  margin: auto;
+}
+
+.subtitle {
+  color: #64748b;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 60px;
+
+  margin: 0;
+
+  letter-spacing: -2px;
+}
+
+.hero-description {
+  max-width: 650px;
+
+  margin-top: 24px;
+
+  font-size: 20px;
+
+  color: #475569;
+}
+
+.hero-buttons {
+  margin-top: 32px;
+
+  display: flex;
+
+  gap: 12px;
+}
+
+
+/* BUTTON */
+
+.button {
+  display: inline-block;
+
+  padding: 10px 18px;
+
+  background: #111827;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+}
+
+.button.secondary {
+  background: white;
+
+  color: #111827;
+
+  border: 1px solid #d1d5db;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
+/* MAIN */
 
 .container {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 50px;
-  background: white;
+  max-width: 1000px;
+
+  margin: auto;
+
+  padding: 40px 24px;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 5px;
+section {
+  padding: 70px 0;
+
+  border-bottom: 1px solid #e5e7eb;
 }
 
-h2 {
-  margin-top: 40px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
+section h2 {
+  font-size: 28px;
+
+  margin-bottom: 35px;
 }
 
-p {
-  line-height: 1.7;
+
+/* EDUCATION / EXPERIENCE */
+
+.item {
+  margin-bottom: 35px;
+}
+
+.item-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.item h3 {
+  margin: 0;
+
+  font-size: 19px;
+}
+
+.institution {
+  margin: 4px 0;
+
+  color: #64748b;
+}
+
+.date {
+  color: #64748b;
+
+  white-space: nowrap;
+}
+
+
+/* PROJECT */
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+.project-card {
+  padding: 24px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card a {
+  text-decoration: none;
+
+  font-weight: 600;
+
+  color: #2563eb;
+}
+
+.tags {
+  margin: 20px 0;
+}
+
+.tags span {
+  display: inline-block;
+
+  margin-right: 6px;
+  margin-bottom: 6px;
+
+  background: #f1f5f9;
+
+  padding: 4px 10px;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+}
+
+
+/* PUBLICATION */
+
+.publication {
+  margin-bottom: 30px;
+}
+
+.publication p {
+  margin: 5px 0;
+}
+
+.publication-info {
+  color: #64748b;
+}
+
+
+/* SKILLS */
+
+.skills {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+
+/* LINKS */
+
+a {
+  color: #2563eb;
+}
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+
+  padding: 40px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .item-header {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
 }
