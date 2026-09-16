@@ -13,8 +13,8 @@ function external(url, label) {
 const email = "whrb106@hanyang.ac.kr";
 const emailLink = '<a href="mailto:' + email + '">e-mail</a>';
 const page = document.body.dataset.page;
-const navigation = [["about", "index.html", "About"], ["publications", "publications.html", "Publications"], ["projects", "projects.html", "Projects"]];
-const nav = '<header class="site-header wrapper"><a class="site-name" href="index.html">gubam</a><nav aria-label="Main navigation">' + navigation.map(([id, url, label]) => '<a href="' + url + '"' + (page === id ? ' aria-current="page"' : '') + '>' + label + '</a>').join("") + '</nav></header>';
+const navigation = [["about", "./", "About"], ["publications", "publications.html", "Publications"], ["projects", "projects.html", "Projects"]];
+const nav = '<header class="site-header wrapper"><a class="site-name" href="./">gubam</a><nav aria-label="Main navigation">' + navigation.map(([id, url, label]) => '<a href="' + url + '"' + (page === id ? ' aria-current="page"' : '') + '>' + label + '</a>').join("") + '</nav></header>';
 function entry(date, title, institution, description = "") {
   return '<article class="entry"><p class="entry-date">' + date + '</p><div><h3>' + title + '</h3><p>' + institution + '</p>' + (description ? '<p class="entry-description">' + description + '</p>' : '') + '</div></article>';
 }
